@@ -35,8 +35,4 @@ jobs:
 
     - name: Build
       run: npm run build
-    - name: Deploy Site
-      env:
-        NETLIFY_SITE_ID: ${{ secrets.NETLFY_SITE_ID }}
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_ACCESS_TOKEN }}
-      run: netlify deploy --dir=public --prod
+    
